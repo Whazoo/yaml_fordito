@@ -1,0 +1,17 @@
+doe: dcba
+pi: 3.14159
+xmas: true
+french-hens: 3
+calling-birds:
+- yeuh
+- yewed
+- eiuol
+- derf
+xmas-fifth-day:
+  calling-birds: ruof
+  french-hens: 3
+  golden-rings: 5
+  partridges:
+    count: 1
+    location: dcba
+  turtle-doves: owt
