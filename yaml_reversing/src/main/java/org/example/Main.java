@@ -44,20 +44,19 @@ public class Main {
     }
 
     private static void reverseValues(Map<String, Object> data) {
-        // Create a temporary map to store reversed values
+        // temporary map a visszafelé írt értékeknek
         Map<String, Object> reversedData = new LinkedHashMap<>();
         for (Map.Entry<String, Object> entry : data.entrySet()) {
             reversedData.put(entry.getKey(), reverseValue(entry.getValue()));
         }
 
-        // Update the original map with reversed values
+        // Update a mapra a visszafelé írt értékekkel
         data.clear();
         data.putAll(reversedData);
     }
 
     private static Object reverseValue(Object value) {
         if (value instanceof String) {
-            // Szöveg inverz
             return new StringBuilder((String) value).reverse().toString();
         } else if (value instanceof Map) {
             reverseValues((Map<String, Object>) value);
